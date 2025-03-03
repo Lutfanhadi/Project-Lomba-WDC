@@ -1,80 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReLoved</title>
-    <link rel="stylesheet" href="./css/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Comforter+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&family=Unlock&display=swap" rel="stylesheet">
-</head>
-<body class="font-nunito-sans w-[430px] md:w-[1000px] lg:w-[1349px] mx-auto">
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Comforter+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&family=Unlock&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-nunito-sans w-[430px] md:w-[1000px] lg:w-[1349px] mx-auto">
     <nav class="mx-[55px] mt-[42px]">
-        <div class="flex items-center gap-[146px]">
-            <div class="flex items-center gap-2.5">
-                <img class="bg-primary py-[8px] px-[8px] rounded-full"  src="./assets/svg/icon-logo.svg" alt="Logo Web ReLoved">
-                <h1 class="font-bold text-3xl">ReLoved</h1>
-            </div>
-            <div class="flex items-center gap-[86px]">
-                <div class="relative  flex items-center">
-                    <input class="bg-search w-[694px] py-[17px] px-[44px] rounded-[50px] font-semibold text-[20px] focus:outline-2 focus:outline-offset-2 focus:outline-primary" type="text" placeholder="Cari Fashion">
-                    <div class="absolute top-3 right-4 bg-primary py-[8px] px-[8px] rounded-full">
-                        <img class="h-[23px]" src="./assets/svg/icon-pecarian.svg" alt="Icon Pecarian">
-                    </div>
-                </div>
-                <div>
-                    <h2 class="text-[20px] font-semibold bg-primary py-[15px] px-[55px] rounded-[10px]">Login</h2>
-                </div>
-            </div>
+      <div class="flex items-center gap-[146px]">
+        <div class="flex items-center gap-2.5">
+          <img
+            class="bg-primary py-[8px] px-[8px] rounded-full"
+            src="./assets/svg/icon-logo.svg"
+            alt="Logo Web ReLoved"
+          />
+          <h1 class="font-bold text-3xl">ReLoved</h1>
         </div>
-        <div class="mt-[24px]">
-            <ul class="font-semibold text-[20px] flex items-center gap-[35px]">
-                <li><a href="home">Home</a></li>
-                <span class="flex items-center gap-1">
-                    <li><a href="kategori">Kategori</a></li>
-                    <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-                </span>
-                <li><a href="artikel">Artikel</a></li>
-                <li><a href="rekomendasi">Rekomendasi</a></li>
-                <li><a href="tukar-barang">Tukar barang</a></li>
-                <li><a href="sumbangkan barang">Sumbangkan barang</a></li>
-                <li><a href="informasi">Informasi</a></li>
-            </ul>
+        <div class="flex items-center gap-[86px]">
+          <div class="relative flex items-center">
+            <input
+              class="bg-secondary w-[694px] py-[17px] px-[44px] rounded-[50px] font-semibold text-[20px] focus:outline-2 focus:outline-offset-2 focus:outline-primary"
+              type="text"
+              placeholder="Cari Fashion"
+            />
+            <div
+              class="absolute top-3 right-4 bg-primary py-[8px] px-[8px] rounded-full"
+            >
+              <img
+                class="h-[23px]"
+                src="./assets/svg/icon-pecarian.svg"
+                alt="Icon Pecarian"
+              />
+            </div>
+          </div>
+          <div>
+            <h2
+              class="text-[20px] font-semibold bg-primary py-[15px] px-[55px] rounded-[10px]"
+            >
+              Login
+            </h2>
+          </div>
         </div>
+      </div>
+      <div class="mt-[24px]">
+        <ul class="font-semibold text-[20px] flex items-center gap-[35px]">
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="home"
+              >Home</a
+            >
+          </li>
+          <li class="group relative">
+            <div class="flex gap-2 items-center cursor-pointer">
+              <a
+                class="border-b-2 pb-0.5 border-transparent hover:text-primary hover:border-primary transition-colors"
+                href="kategori"
+                >Kategori</a
+              >
+              <svg class="w-[20px] h-[20px] text-gray-700">
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="absolute left-0 mt-2 w-[170px] bg-secondary p-3 rounded shadow-lg transition-all duration-300 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0"
+            >
+              <ul class="flex flex-col gap-[5px] text-[20px] font-semibold">
+                <li>
+                  <a class="hover:text-primary" href="branded">Branded</a>
+                </li>
+                <li>
+                  <a class="hover:text-primary" href="fashion wanita"
+                    >Fashion Wanita</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-primary" href="fashion pria"
+                    >Fashion Pria</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-primary" href="fashion anak"
+                    >Fashion Anak</a
+                  >
+                </li>
+                <li><a class="hover:text-primary" href="tas">Tas</a></li>
+                <li><a class="hover:text-primary" href="sepatu">Sepatu</a></li>
+                <li>
+                  <a class="hover:text-primary" href="lainnya">Lainnya</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="artikel"
+              >Artikel</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="rekomendasi"
+              >Rekomendasi</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="tukar-barang"
+              >Tukar barang</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="sumbangkan barang"
+              >Sumbangkan barang</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="informasi"
+              >Informasi</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <main>
-        <!-- hadi -->
-         <!-- home -->
-        <section>
-            <div class="mx-[55px] mt-[99px] flex justify-between">
+      <!-- hadi -->
+      <!-- home -->
+      <section class="mx-[55px] mt-[99px]">
+        <div class="flex justify-between">
+          <div>
+            <h1 class="font-bold text-[40px] w-[474px] mb-[32px]">
+              Gaya Baru, Bumi Tetap Hijau!
+            </h1>
+            <p class="font-medium text-[20px] w-[452px] mb-[42px]">
+              Tunjukkan kepedulianmu terhadap lingkungan dengan memilih pakaian
+              preloved. Kamu bisa tampil trendy tanpa meninggalkan jejak limbah!
+            </p>
+            <button
+              class="font-medium drop-shadow-lg text-[20px] bg-primary py-2.5 px-[30px] rounded-[10px]"
+            >
+              Jual sekarang
+            </button>
+            <button
+              class="font-medium drop-shadow-lg text-[20px] bg-white border-2 border-black py-2.5 px-[30px] rounded-[10px] ml-[18px]"
+            >
+              Cara kerja
+            </button>
+          </div>
+          <div class="relative">
+            <div class="flex gap-[79px] w-[650px]">
+              <img
+                class="w-[299px] h-[299px] absolute top-[120px] right-0"
+                src="./assets/img/background-home.png"
+                alt="gambar latar belakang 1"
+              />
+              <img
+                class="w-[299px] h-[299px] absolute bottom-[165px] left-[70px]"
+                src="./assets/img/background-home.png"
+                alt="gambar latar belakang 2"
+              />
+            </div>
+            <div class="flex w-[750px] h-[400px]">
+              <img
+                class="absolute bottom-6 left-[19px]"
+                src="./assets/img/img-home1.png"
+                alt="gambar halaman 1"
+              />
+              <img
+                class="absolute top-20 left-[250px]"
+                src="./assets/img/img-home2.png"
+                alt="gambar halaman 2"
+              />
+              <img
+                class="absolute bottom-7 right-6"
+                src="./assets/img/img-home3.png"
+                alt="gambar halaman 3"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-[140px] bg-white rounded-[20px] drop-shadow-2xl pt-[15px] pb-[37px]"
+        >
+          <h1 class="font-bold text-[20px] mb-[23px] text-center">
+            Temukan brand fashion terkenal di sini
+          </h1>
+          <div class="flex items-center justify-center gap-[54px]">
+            <img src="./assets/svg/icon-gucci.svg" alt="icon gucci" />
+            <img src="./assets/svg/icon-nike.svg" alt="icon nike" />
+            <img src="./assets/svg/icon-hermes.svg" alt="icon hermes" />
+            <img src="./assets/svg/icon-adidas.svg" alt="icon addidas" />
+            <img src="./assets/svg/icon-fila.svg" alt="icon fila" />
+            <img src="./assets/svg/icon-uniqlo.svg" alt="icon uniqlo" />
+            <img src="./assets/svg/icon-dior.svg" alt="icon dior" />
+          </div>
+        </div>
+      </section>
+
+      <!-- about us -->
+      <section class="mt-[147px] mx-[55px] flex justify-between">
+        <div class="relative">
+          <div class="relative w w-[550px] h-[550px]">
+            <img
+              class="absolute top-0 left-[260px]"
+              src="./assets/img/background-home.png"
+              alt="gambar latar belakang tentang kami 1"
+            />
+            <img
+              class="absolute top-[360px] left-0"
+              src="./assets/img/background-home.png"
+              alt="gambar latar belakang tentang kami 2"
+            />
+          </div>
+          <div class="absolute top-0">
+            <div class="relative grid grid-cols-2 w-[520px] h-[550px]">
+              <img
+                class="absolute top-0 left-0"
+                src="./assets/img/gambar-tentang-kami1.png"
+                alt="gambar latar belakang tentang kami 1"
+              />
+              <img
+                class="absolute top-[67px] right-0"
+                src="./assets/img/gambar-tentang-kami2.png"
+                alt="gambar latar belakang tentang kami 2"
+              />
+              <img
+                class="absolute bottom-[15px] left-0"
+                src="./assets/img/gambar-tentang-kami3.png"
+                alt="gambar latar belakang tentang kami 3"
+              />
+              <img
+                class="absolute top-[309px] right-0"
+                src="./assets/img/gambar-tentang-kami4.png"
+                alt="gambar latar belakang tentang kami 4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-[584px]">
+          <h1 class="font-semibold text-[30px] mb-[17px] text-center">Tentang kami</h1>
+          <p class="font-normal text-[20px] mb-[12px]">
+            Kami percaya bahwa fashion tidak harus merusak bumi. Setiap tahun,
+            jutaan ton pakaian berakhir di tempat sampah, mencemari lingkungan.
+            Melalui platform ini, kami ingin mengubah cara berpikir tentang
+            fashion dengan memfasilitasi jual beli barang bekas, memberikan
+            pakaian kesempatan kedua. Setiap transaksi adalah langkah kecil
+            untuk mengurangi limbah dan menjaga bumi tetap hijau. Bergabunglah
+            dengan kami dalam gerakan ini mulai berbelanja dengan bijak dan
+            jadilah bagian dari solusi!
+          </p>
+          <h1 class="font-semibold text-[30px] mb-[10px] text-center">Misi kami</h1>
+          <ul class="list-disc">
+            <li class="font-normal text-[20px]">
+              Kami ingin mengubah cara dunia melihat fashion, dari konsumsi
+              berlebihan menjadi gaya hidup yang bertanggung jawab.
+            </li>
+          </ul>
+          <ul class="list-disc">
+            <li class="font-normal text-[20px]">
+              Setiap pakaian bekas yang kamu beli, jual, tukar dan sumbangkan
+              adalah kontribusi nyata untuk mengurangi limbah.
+            </li>
+          </ul>
+          <ul class="list-disc">
+            <li class="font-normal text-[20px]">
+              Kami membangun gerakan bersama untuk masa depan yang lebih hijau dan
+              berkelanjutan.
+            </li>
+          </ul>
+          <div class="mt-[51px]">
+              <button class="bg-primary rounded-[10px] py-[10px] px-[30px] mr-[22px]">Ayo Tukar fashion</button>
+              <button class="border-2 border-black bg-white rounded-[10px] py-[10px] px-[30px]">Donasi fashion</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- fashion -->
+       <section class="mt-[91px] mx-[55px]">
+           <h1 class="font-bold text-[32px] mb-[28px]">Fashion</h1>
+           <!-- baris card 1-->
+        <div class="flex items-center gap-[17px]">
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
                 <div>
-                    <h1 class="font-bold text-[40px] w-[474px] mb-[32px]">Gaya Baru, Bumi Tetap Hijau!</h1>
-                    <p class="font-medium text-[20px] w-[452px] mb-[42px]">Tunjukkan kepedulianmu terhadap lingkungan dengan memilih pakaian preloved. Kamu bisa tampil trendy tanpa meninggalkan jejak limbah!</p>
-                    <button class="font-medium text-[20px] bg-primary py-2.5 px-[30px] rounded-[10px]">Jual sekarang</button>
-                    <button class="font-medium text-[20px] border-2 border-black py-2.5 px-[30px] rounded-[10px] ml-[18px]">Cara kerja</button>
+                    <img src="./assets/img/foto-baju1.png" alt="">
                 </div>
-                <div class="relative bg-red-500">
-                    <div class="flex gap-[79px] w-[650px]">
-                        <img class="w-[299px] h-[299px] absolute bottom-0 left-60 " src="./assets/img/background-home.png" alt="img background home">
-                        <img class="w-[299px] h-[299px] absolute bottom-40 left-10" src="./assets/img/background-home.png" alt="img background home">
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
                     </div>
-                    <div class="flex w-[700px] h-[400px]">
-                        <img class="absolute bottom-6 left-0" src="./assets/img/img-home1.png" alt="img home 1">
-                        <img class="absolute top-20 left-[226px]"  src="./assets/img/img-home2.png" alt="img home 2">
-                        <img class="absolute bottom-7 right-0" src="./assets/img/img-home3.png" alt="img home 3">
-                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
                 </div>
             </div>
-        </section>
 
-        <!-- najikha -->
-         <section>
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
 
-         </section>
-         <footer>
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
 
-         </footer>
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>  
+        </div>
+
+        <!-- baris card 2 -->
+         <div class="flex items-center gap-[17px] mt-[23px]">
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>  
+        </div>
+        
+       </section>
+
+      <!-- najikha -->
+      <section></section>
+      <footer></footer>
     </main>
-</body>
+  </body>
 </html>
