@@ -9,16 +9,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Comforter+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&family=Unlock&display=swap" rel="stylesheet">
 </head>
-<body class="font-nunito-sans">
-    <nav>
-
+<body class="font-nunito-sans w-[430px] md:w-[1000px] lg:w-[1349px] mx-auto">
+    <nav class="mx-[55px] mt-[42px]">
+        <div class="flex items-center gap-[146px]">
+            <div class="flex items-center gap-2.5">
+                <img class="bg-primary py-[8px] px-[8px] rounded-full"  src="./assets/svg/icon-logo.svg" alt="Logo Web ReLoved">
+                <h1 class="font-bold text-3xl">ReLoved</h1>
+            </div>
+            <div class="flex items-center gap-[86px]">
+                <div class="relative  flex items-center">
+                    <input class="bg-search w-[694px] py-[17px] px-[44px] rounded-[50px] font-semibold text-[20px] focus:outline-2 focus:outline-offset-2 focus:outline-primary" type="text" placeholder="Cari Fashion">
+                    <div class="absolute top-3 right-4 bg-primary py-[8px] px-[8px] rounded-full">
+                        <img class="h-[23px]" src="./assets/svg/icon-pecarian.svg" alt="Icon Pecarian">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-[20px] font-semibold bg-primary py-[15px] px-[55px] rounded-[10px]">Login</h2>
+                </div>
+            </div>
+        </div>
+        <div class="mt-[24px]">
+            <ul class="font-semibold text-[20px] flex items-center gap-[35px]">
+                <li><a href="home">Home</a></li>
+                <span class="flex items-center gap-1">
+                    <li><a href="kategori">Kategori</a></li>
+                    <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+                </span>
+                <li><a href="artikel">Artikel</a></li>
+                <li><a href="rekomendasi">Rekomendasi</a></li>
+                <li><a href="tukar-barang">Tukar barang</a></li>
+                <li><a href="sumbangkan barang">Sumbangkan barang</a></li>
+                <li><a href="informasi">Informasi</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
         <!-- hadi -->
+         <!-- home -->
         <section>
-            
+            <div class="mx-[55px] mt-[99px] flex justify-between">
+                <div>
+                    <h1 class="font-bold text-[40px] w-[474px] mb-[32px]">Gaya Baru, Bumi Tetap Hijau!</h1>
+                    <p class="font-medium text-[20px] w-[452px] mb-[42px]">Tunjukkan kepedulianmu terhadap lingkungan dengan memilih pakaian preloved. Kamu bisa tampil trendy tanpa meninggalkan jejak limbah!</p>
+                    <button class="font-medium text-[20px] bg-primary py-2.5 px-[30px] rounded-[10px]">Jual sekarang</button>
+                    <button class="font-medium text-[20px] border-2 border-black py-2.5 px-[30px] rounded-[10px] ml-[18px]">Cara kerja</button>
+                </div>
+                <div class="relative bg-red-500">
+                    <div class="flex gap-[79px] w-[650px]">
+                        <img class="w-[299px] h-[299px] absolute bottom-0 left-60 " src="./assets/img/background-home.png" alt="img background home">
+                        <img class="w-[299px] h-[299px] absolute bottom-40 left-10" src="./assets/img/background-home.png" alt="img background home">
+                    </div>
+                    <div class="flex w-[700px] h-[400px]">
+                        <img class="absolute bottom-6 left-0" src="./assets/img/img-home1.png" alt="img home 1">
+                        <img class="absolute top-20 left-[226px]"  src="./assets/img/img-home2.png" alt="img home 2">
+                        <img class="absolute bottom-7 right-0" src="./assets/img/img-home3.png" alt="img home 3">
+                    </div>
+                </div>
+            </div>
         </section>
-        
+
         <!-- najikha -->
          <section>
 
