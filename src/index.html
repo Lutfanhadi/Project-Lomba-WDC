@@ -5,51 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReLoved</title>
     <link rel="stylesheet" href="./css/output.css" />
+    <link rel="icon" href="./assets/svg/icon-logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Comforter+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&family=Unlock&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
   </head>
-  <body class="font-nunito-sans w-[430px] md:w-[1000px] lg:w-[1349px] mx-auto">
-    <nav class="mx-[55px] mt-[42px]">
-      <div class="flex items-center gap-[146px]">
+  <body class="font-nunito-sans w-[430px] md:w-[1020px] lg:w-[1349px] mx-auto">
+    <nav class="border-border border-b-2 md:border-b-2 lg:border-none">
+      <div class="flex items-center mx-[20px] justify-between md:justify-between py-[16px] md:mx-[30px] md:py-[25px] lg:py-0 lg:gap-[146px] lg:mx-[55px] lg:mt-[42px]">
         <div class="flex items-center gap-2.5">
+          <!-- <svg id="toggleMenu" class="md:w-[47px] md:h-[34px] md:mr-5 md:block lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg> -->
+          <img id="toggleMenu" class="mr-[20px] md:w-[47px] md:h-[34px] md:mr-5 md:block lg:hidden" src="./assets/svg/icon-menu.svg" alt="icon menu">
           <img
-            class="bg-primary py-[8px] px-[8px] rounded-full"
+            class="bg-primary rounded-full py-[5px] px-[5px] md:py-[3px] md:px-[3px] lg:py-[8px] lg:px-[8px]"
             src="./assets/svg/icon-logo.svg"
             alt="Logo Web ReLoved"
           />
-          <h1 class="font-bold text-3xl">ReLoved</h1>
+          <h1 class="font-bold text-[20px] md:text-2xl lg:text-3xl">ReLoved</h1>
         </div>
-        <div class="flex items-center gap-[86px]">
+        <div class="flex items-center gap-2 md:gap-[60px] lg:gap-[86px]">
           <div class="relative flex items-center">
             <input
-              class="bg-secondary w-[694px] py-[17px] px-[44px] rounded-[50px] font-semibold text-[20px] focus:outline-2 focus:outline-offset-2 focus:outline-primary"
+              class="bg-secondary rounded-[50px] font-semibold focus:outline-2 focus:outline-offset-2 focus:outline-primary hidden md:text-[14px] md:w-[336px] md:py-[12px] md:px-[15px] md:block lg:text-[20px] lg:w-[694px] lg:py-[17px] lg:px-[44px] lg:block"
               type="text"
               placeholder="Cari Fashion"
             />
             <div
-              class="absolute top-3 right-4 bg-primary py-[8px] px-[8px] rounded-full"
+              class="absolute bg-primary rounded-full md:py-[6px] md:px-[6px] md:top-[7px] md:right-3 lg:py-[8px] lg:px-[8px] lg:top-3 lg:right-4"
             >
               <img
-                class="h-[23px]"
+                class="md:h-[18px] lg:h-[23px]"
                 src="./assets/svg/icon-pecarian.svg"
                 alt="Icon Pecarian"
               />
             </div>
           </div>
+          <div
+              class="bg-primary rounded-full block py-[7px] px-[7px] md:py-[6px] md:px-[6px] md:hidden lg:py-[8px] lg:px-[8px] lg:hidden"
+            >
+              <img
+                class="h-[14px] md:h-[18px] lg:h-[23px]"
+                src="./assets/svg/icon-pecarian.svg"
+                alt="Icon Pecarian"
+              />
+            </div>
           <div>
-            <h2
-              class="text-[20px] font-semibold bg-primary py-[15px] px-[55px] rounded-[10px]"
+            <button
+              class="font-semibold bg-primary rounded-[10px] hover:bg-hover py-[5px] px-[23px] md:text-[18px] md:py-[7px] md:px-[40px] lg:text-[20px] lg:py-[15px] lg:px-[55px]"
             >
               Login
-            </h2>
+            </button>
           </div>
         </div>
       </div>
-      <div class="mt-[24px]">
+      <div class="mt-[24px] hidden md:hidden lg:block lg:mx-[55px]">
         <ul class="font-semibold text-[20px] flex items-center gap-[35px]">
           <li>
             <a
@@ -141,56 +154,100 @@
         </ul>
       </div>
     </nav>
+
+    <div id="containerNavbar" class="fixed inset-0 bg-[#2c2b2b98] z-20 transition-all duration-700 -translate-x-full">
+      <div class="bg-white h-full max-w-3/5">
+        <div class="flex items-center justify-between border-b-2 border-border py-[16px] px-[20px] md:py-[30px] md:px-[20px]">
+          <div class="flex items-center gap-2.5">
+            <img
+              class="bg-primary rounded-full py-[3px] px-[3px]"
+              src="./assets/svg/icon-logo.svg"
+              alt="Logo Web ReLoved"
+            />
+            <h1 class="font-bold text-[20px] md:text-2xl">ReLoved</h1>
+          </div>
+          <svg id="toggleClose" class="w-[20px] md:w-[35px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
+        </div>
+        <div>
+          <ul class="font-bold text-[16px] md:text-[20px]">
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border md:py-[15px]" href="">Home</a></li>
+            <li class="flex items-center py-[10px] px-[20px] border-b-2 border-border hover:bg-hover md:py-[15px]"><a href="">Kategori</a>
+            <svg class="w-[25px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            </li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border md:py-[15px]" href="">Rekomendasi</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border md:py-[15px]" href="">Artikel</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border md:py-[15px]" href="">Tukar Barang</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border md:py-[15px]" href="">Sumbangkan Barang</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border md:py-[15px]" href="">Informasi</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-[15px] py-[10px] px-[20px] border-b-2 border-border md:py-[15px]">
+          <svg class="w-[30px] hover:text-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+          <svg class="w-[30px] hover:text-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg>
+          <svg class="w-[30px] hover:text-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3584 9.38246C11.3857 9.78702 9.4418 10.6244 6.5266 11.8945C6.05321 12.0827 5.80524 12.2669 5.78266 12.4469C5.74451 12.7513 6.12561 12.8711 6.64458 13.0343C6.71517 13.0565 6.78832 13.0795 6.8633 13.1039C7.37388 13.2698 8.06071 13.464 8.41776 13.4717C8.74164 13.4787 9.10313 13.3452 9.50222 13.0711C12.226 11.2325 13.632 10.3032 13.7203 10.2832C13.7826 10.269 13.8689 10.2513 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9739 10.48C13.9361 10.641 12.4401 12.0318 11.666 12.7515C11.4351 12.9661 11.2101 13.1853 10.9833 13.4039C10.509 13.8611 10.1533 14.204 11.003 14.764C11.8644 15.3317 12.7323 15.8982 13.5724 16.4971C13.9867 16.7925 14.359 17.0579 14.8188 17.0156C15.0861 16.991 15.3621 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.3821 16.6352 8.80083C16.6484 8.6623 16.6318 8.485 16.6185 8.40717C16.6052 8.32934 16.5773 8.21844 16.4762 8.13635C16.3563 8.03913 16.1714 8.01863 16.0887 8.02009C15.7125 8.02672 15.1355 8.22737 12.3584 9.38246Z"></path></svg>
+        </div>
+        <div>
+          <ul>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border font-bold text-gray-500 md:py-[15px]" href="">About</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border font-bold text-gray-500 md:py-[15px]" href="">Contact</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border font-bold text-gray-500 md:py-[15px]" href="">Privacy Policy</a></li>
+            <li class="hover:bg-hover"><a class="py-[10px] px-[20px] border-b-2 block border-border font-bold text-gray-500 md:py-[15px]" href="">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
     <main>
       <!-- hadi -->
       <!-- home -->
-      <section class="mx-[55px] mt-[99px]">
-        <div class="flex justify-between">
+      <section class="mx-[20px] mt-[11px] md:mx-[30px] md:mt-[99px] lg:mx-[55px] lg:mt-[99px]">
+        <div class="flex flex-col justify-between md:flex-row lg:flex-row">
           <div>
-            <h1 class="font-bold text-[40px] w-[474px] mb-[32px]">
+            <h1 class="font-bold mb-[32px] text-[30px] md:text-[30px] md:w-[336px] lg:text-[40px] lg:w-[474px]">
               Gaya Baru, Bumi Tetap Hijau!
             </h1>
-            <p class="font-medium text-[20px] w-[452px] mb-[42px]">
+            <p class="font-medium mb-[42px] text-[18px] md:text-[16px] md:w-[336px] lg:text-[20px] lg:w-[452px]">
               Tunjukkan kepedulianmu terhadap lingkungan dengan memilih pakaian
               preloved. Kamu bisa tampil trendy tanpa meninggalkan jejak limbah!
             </p>
             <button
-              class="font-medium drop-shadow-lg text-[20px] bg-primary py-2.5 px-[30px] rounded-[10px]"
+              class="font-medium drop-shadow-lg bg-primary rounded-[10px] hover:bg-hover py-2.5 px-[30px] md:text-[16px] md:py-2.5 md:px-[30px] lg:text-[20px] lg:py-2.5 lg:px-[30px]"
             >
               Jual sekarang
             </button>
             <button
-              class="font-medium drop-shadow-lg text-[20px] bg-white border-2 border-black py-2.5 px-[30px] rounded-[10px] ml-[18px]"
+              class="font-medium drop-shadow-lg bg-white border-2 border-black rounded-[10px] ml-[18px] hover:border-primary hover:text-primary py-2.5 px-[30px] md:text-[16px] md:py-2.5 md:px-[30px] lg:text-[20px] lg:py-2.5 lg:px-[30px]"
             >
               Cara kerja
             </button>
           </div>
           <div class="relative">
-            <div class="flex gap-[79px] w-[650px]">
+            <div class="flex w-[390px] md:gap-[79px] md:w-[450px] lg:gap-[79px] lg:w-[650px]">
               <img
-                class="w-[299px] h-[299px] absolute top-[120px] right-0"
+                class="absolute w-[152px] h-[152px] top-[180px] right-0 md:top-[100px] md:right-0 md:w-[180px] md:h-[180px] lg:top-[120px] lg:right-0 lg:w-[299px] lg:h-[299px]"
                 src="./assets/img/background-home.png"
                 alt="gambar latar belakang 1"
               />
               <img
-                class="w-[299px] h-[299px] absolute bottom-[165px] left-[70px]"
+                class="absolute w-[152px] h-[152px] bottom-[165px] left-[60px] md:bottom-[165px] md:left-[70px] md:w-[180px] md:h-[180px] lg:bottom-[165px] lg:left-[70px] lg:w-[299px] lg:h-[299px]"
                 src="./assets/img/background-home.png"
                 alt="gambar latar belakang 2"
               />
             </div>
-            <div class="flex w-[750px] h-[400px]">
+            <div class="flex mt-[50px] w-[390px] h-[300px] md:w-[500px] md:h-[300px] md:mt-0 lg:w-[700px] lg:h-[400px] lg:mt-0">
               <img
-                class="absolute bottom-6 left-[19px]"
+                class="absolute w-[130px] h-[240px] bottom-14 left-0 md:bottom-14 md:left-0 md:w-[170px] md:h-[270px] lg:bottom-6 lg:left-[19px] lg:w-[220px] lg:h-[420px]"
                 src="./assets/img/img-home1.png"
                 alt="gambar halaman 1"
               />
               <img
-                class="absolute top-20 left-[250px]"
+                class="absolute w-[130px] h-[240px] top-[120px] left-[130px] md:top-[60px] md:left-[160px] md:w-[170px] md:h-[270px] lg:top-[60px] lg:left-[238px] lg:w-[220px] lg:h-[420px]"
                 src="./assets/img/img-home2.png"
                 alt="gambar halaman 2"
               />
               <img
-                class="absolute bottom-7 right-6"
+                class="absolute w-[130px] h-[240px] bottom-14 right-0 md:bottom-14 md:right-2.5 md:w-[170px] md:h-[270px] lg:bottom-7 lg:right-6 lg:w-[220px] lg:h-[420px]"
                 src="./assets/img/img-home3.png"
                 alt="gambar halaman 3"
               />
@@ -198,66 +255,67 @@
           </div>
         </div>
         <div
-          class="mt-[140px] bg-white rounded-[20px] drop-shadow-2xl pt-[15px] pb-[37px]"
+          class="bg-white rounded-[20px] drop-shadow-lg pt-[15px] pb-[37px] mt-[50px] md:mt-[54px] lg:mt-[140px]"
         >
-          <h1 class="font-bold text-[20px] mb-[23px] text-center">
+          <h1 class="font-bold mb-[23px] text-center w-[180px] mx-auto md:text-[20px] md:w-full lg:text-[24px] lg:w-full">
             Temukan brand fashion terkenal di sini
           </h1>
-          <div class="flex items-center justify-center gap-[54px]">
-            <img src="./assets/svg/icon-gucci.svg" alt="icon gucci" />
-            <img src="./assets/svg/icon-nike.svg" alt="icon nike" />
-            <img src="./assets/svg/icon-hermes.svg" alt="icon hermes" />
-            <img src="./assets/svg/icon-adidas.svg" alt="icon addidas" />
-            <img src="./assets/svg/icon-fila.svg" alt="icon fila" />
-            <img src="./assets/svg/icon-uniqlo.svg" alt="icon uniqlo" />
-            <img src="./assets/svg/icon-dior.svg" alt="icon dior" />
+          <div class="grid grid-cols-3 place-items-center gap-[16px] md:grid-cols-7 md:gap-[30px] lg:grid-cols-7 lg:gap-[54px] lg:px-[20px]">
+            <img class="w-[48px] h-[48px] md:w-[61px] md:h-[69px] lg:w-[95px] lg:h-[95px]" src="./assets/svg/icon-gucci.svg" alt="icon gucci" />
+            <img class="w-[61px] h-[32px] md:w-[74px] md:h-[45px] lg:w-[116px] lg:h-[60px]" src="./assets/svg/icon-nike.svg" alt="icon nike" />
+            <img class="w-[72px] h-[42px] md:w-[90px] md:h-[55px] lg:w-[139px] lg:h-[80px]" src="./assets/svg/icon-hermes.svg" alt="icon hermes" />
+            <img class="w-[59px] h-[41px] md:w-[73px] md:h-[55px] lg:w-[114px] lg:h-[79px]" src="./assets/svg/icon-adidas.svg" alt="icon addidas" />
+            <img class="w-[56px] h-[19px] md:w-[67px] md:h-[27px] lg:w-[105px] lg:h-[36px]" src="./assets/svg/icon-fila.svg" alt="icon fila" />
+            <img class="w-[44px] h-[44px] md:w-[55px] md:h-[61px] lg:w-[85px] lg:h-[84px]" src="./assets/svg/icon-uniqlo.svg" alt="icon uniqlo" />
+            <img class="w-[55px] h-[24px] md:w-[79px] md:h-[39px] lg:w-[123px] lg:h-[53px] hidden md:block lg:block" src="./assets/svg/icon-dior.svg" alt="icon dior" />
+            <img class="w-[55px] h-[24px] md:w-[79px] md:h-[39px] lg:w-[123px] lg:h-[53px] col-start-2 block md:hidden lg:hidden" src="./assets/svg/icon-dior.svg" alt="icon dior" />
           </div>
         </div>
       </section>
 
       <!-- about us -->
-      <section class="mt-[147px] mx-[55px] flex justify-between">
+      <section class="flex flex-col justify-between mx-[20px] mt-[36px] md:flex-row md:mx-[50px] md:mt-[99px] lg:flex-row lg:mt-[147px] lg:mx-[55px]">
         <div class="relative">
-          <div class="relative w w-[550px] h-[550px]">
+          <div class="relative w-[390px] h-[350px] md:w-[350px] md:h-[350px] lg:w-[550px] lg:h-[550px]">
             <img
-              class="absolute top-0 left-[260px]"
+              class="absolute w-[167px] h-[167px] top-0 left-[220px] md:top-0 md:left-[180px] md:w-[167px] md:h-[167px] lg:w-[299px] lg:h-[299px] lg:top-0 lg:left-[280px]"
               src="./assets/img/background-home.png"
               alt="gambar latar belakang tentang kami 1"
             />
             <img
-              class="absolute top-[360px] left-0"
+              class="absolute w-[167px] h-[167px] top-[220px] left-0 md:top-[220px] md:left-0 md:w-[167px] md:h-[167px] lg:w-[299px] lg:h-[299px] lg:top-[360px] lg:left-0"
               src="./assets/img/background-home.png"
               alt="gambar latar belakang tentang kami 2"
             />
           </div>
           <div class="absolute top-0">
-            <div class="relative grid grid-cols-2 w-[520px] h-[550px]">
+            <div class="relative grid grid-cols-2 w-[390px] h-[340px] md:w-[310px] md:h-[340px] lg:w-[520px] lg:h-[550px]">
               <img
-                class="absolute top-0 left-0"
+                class="absolute w-[140px] h-[164px] top-[10px] left-[50px] md:top-[10px] md:left-0 md:w-[140px] md:h-[164px] lg:w-[251px] lg:h-[293px] lg:top-0 lg:left-0"
                 src="./assets/img/gambar-tentang-kami1.png"
                 alt="gambar latar belakang tentang kami 1"
               />
               <img
-                class="absolute top-[67px] right-0"
+                class="absolute w-[140px] h-[126px] top-[48px] right-[50px] md:top-[48px] md:right-[18px] md:w-[140px] md:h-[126px] lg:w-[251px] lg:h-[226px] lg:top-[67px] lg:right-0"
                 src="./assets/img/gambar-tentang-kami2.png"
                 alt="gambar latar belakang tentang kami 2"
               />
               <img
-                class="absolute bottom-[15px] left-0"
+                class="absolute w-[140px] h-[126px] bottom-[30px] left-[50px]  md:bottom-[30px] md:left-0 md:w-[140px] md:h-[126px] lg:w-[251px] lg:h-[226px] lg:bottom-[15px] lg:left-0"
                 src="./assets/img/gambar-tentang-kami3.png"
                 alt="gambar latar belakang tentang kami 3"
               />
               <img
-                class="absolute top-[309px] right-0"
+                class="absolute w-[140px] h-[164px] top-[183px] right-[50px] md:top-[183px] md:right-[18px] md:w-[140px] md:h-[164px] lg:w-[251px] lg:h-[293px] lg:top-[309px] lg:right-0"
                 src="./assets/img/gambar-tentang-kami4.png"
                 alt="gambar latar belakang tentang kami 4"
               />
             </div>
           </div>
         </div>
-        <div class="w-[584px]">
-          <h1 class="font-semibold text-[30px] mb-[17px] text-center">Tentang kami</h1>
-          <p class="font-normal text-[20px] mb-[12px]">
+        <div class="md:w-[480px] lg:w-[584px]">
+          <h1 class="font-semibold mb-[17px] text-center mt-[50px] text-[20px] md:mt-0 md:text-[20px] lg:mt-0 lg:text-[30px]">Tentang kami</h1>
+          <p class="font-normal text-justify mb-[12px] mx-[20px] text-[14px] md:text-[14px] md:mx-0 lg:text-[20px] lg:mx-0">
             Kami percaya bahwa fashion tidak harus merusak bumi. Setiap tahun,
             jutaan ton pakaian berakhir di tempat sampah, mencemari lingkungan.
             Melalui platform ini, kami ingin mengubah cara berpikir tentang
@@ -267,40 +325,40 @@
             dengan kami dalam gerakan ini mulai berbelanja dengan bijak dan
             jadilah bagian dari solusi!
           </p>
-          <h1 class="font-semibold text-[30px] mb-[10px] text-center">Misi kami</h1>
-          <ul class="list-disc">
-            <li class="font-normal text-[20px]">
+          <h1 class="font-semibold mb-[10px] text-center text-[20px] md:text-[20px] lg:text-[30px]">Misi kami</h1>
+          <ul class="list-disc mx-[20px] md:mx-0 lg:mx-0">
+            <li class="font-normal text-justify text-[14px] md:text-[14px] lg:text-[20px]">
               Kami ingin mengubah cara dunia melihat fashion, dari konsumsi
               berlebihan menjadi gaya hidup yang bertanggung jawab.
             </li>
           </ul>
-          <ul class="list-disc">
-            <li class="font-normal text-[20px]">
+          <ul class="list-disc  mx-[20px] md:mx-0 lg:mx-0">
+            <li class="font-normal text-justify text-[14px] md:text-[14px] lg:text-[20px]">
               Setiap pakaian bekas yang kamu beli, jual, tukar dan sumbangkan
               adalah kontribusi nyata untuk mengurangi limbah.
             </li>
           </ul>
-          <ul class="list-disc">
-            <li class="font-normal text-[20px]">
+          <ul class="list-disc  mx-[20px] md:mx-0 lg:mx-0">
+            <li class="font-normal text-justify text-[14px] md:text-[14px] lg:text-[20px]">
               Kami membangun gerakan bersama untuk masa depan yang lebih hijau dan
               berkelanjutan.
             </li>
           </ul>
           <div class="mt-[51px]">
-              <button class="bg-primary rounded-[10px] py-[10px] px-[30px] mr-[22px]">Ayo Tukar fashion</button>
-              <button class="border-2 border-black bg-white rounded-[10px] py-[10px] px-[30px]">Donasi fashion</button>
+              <button class="bg-primary rounded-[10px] py-[10px] px-[30px] mr-[22px] font-semibold hover:bg-hover text-[14px] md:text-[14px] lg:text-[20px]">Ayo Tukar fashion</button>
+              <button class="border-2 border-black bg-white rounded-[10px] py-[10px] px-[30px] font-semibold hover:border-primary hover:text-primary text-[14px] md:text-[14px] lg:text-[20px]">Donasi fashion</button>
           </div>
         </div>
       </section>
 
       <!-- fashion -->
-       <section class="mt-[91px] mx-[55px]">
-           <h1 class="font-bold text-[32px] mb-[28px]">Fashion</h1>
+       <section class="mt-[37px] mx-[20px] md:mt-[99px] md:mx-[30px] lg:mt-[91px] lg:mx-[55px]">
+           <h1 class="font-bold mb-[28px] text-center text-2xl md:text-center md:text-2xl lg:text-start lg:text-[32px]">Fashion</h1>
            <!-- baris card 1-->
-        <div class="flex items-center gap-[17px]">
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+        <div class="grid grid-cols-2 gap-[20px] place-items-center items-center md:grid-cols-3 md:gap-[80px] lg:grid-cols-4 lg:gap-[80px]">
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
                 <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
                 </div>
                 <div class="px-[10px] pt-[5px]">
                     <div class="flex justify-between">
@@ -313,9 +371,9 @@
                 </div>
             </div>
 
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
                 <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
                 </div>
                 <div class="px-[10px] pt-[5px]">
                     <div class="flex justify-between">
@@ -328,14 +386,14 @@
                 </div>
             </div>
 
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
                 <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
                 </div>
                 <div class="px-[10px] pt-[5px]">
                     <div class="flex justify-between">
                         <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
                     </div>
                     <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
                     <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
@@ -343,14 +401,14 @@
                 </div>
             </div>
 
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
                 <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
                 </div>
                 <div class="px-[10px] pt-[5px]">
                     <div class="flex justify-between">
                         <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
                     </div>
                     <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
                     <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
@@ -358,99 +416,98 @@
                 </div>
             </div>
 
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
                 <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
                 </div>
                 <div class="px-[10px] pt-[5px]">
                     <div class="flex justify-between">
                         <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
                     </div>
                     <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
                     <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
                     <p class="font-medium text-[16px]">L</p>
                 </div>
-            </div>  
+            </div>
+
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>
+
+            <div class="w-[190px] h-[305px] md:w-[250px] md:h-[365px] lg:w-[250px] lg:h-[365px] rounded-[10px] shadow-lg">
+                <div>
+                    <img src="./assets/img/foto-baju1.png" alt="foto barang">
+                </div>
+                <div class="px-[10px] pt-[5px]">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-[16px]">Hoodie</h1>
+                        <img src="./assets/svg/icon-love.svg" alt="icon hati">
+                    </div>
+                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
+                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
+                    <p class="font-medium text-[16px]">L</p>
+                </div>
+            </div>    
         </div>
 
-        <!-- baris card 2 -->
-         <div class="flex items-center gap-[17px] mt-[23px]">
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
-                <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
-                </div>
-                <div class="px-[10px] pt-[5px]">
-                    <div class="flex justify-between">
-                        <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
-                    </div>
-                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
-                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
-                    <p class="font-medium text-[16px]">L</p>
-                </div>
-            </div>
-
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
-                <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
-                </div>
-                <div class="px-[10px] pt-[5px]">
-                    <div class="flex justify-between">
-                        <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
-                    </div>
-                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
-                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
-                    <p class="font-medium text-[16px]">L</p>
-                </div>
-            </div>
-
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
-                <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
-                </div>
-                <div class="px-[10px] pt-[5px]">
-                    <div class="flex justify-between">
-                        <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
-                    </div>
-                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
-                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
-                    <p class="font-medium text-[16px]">L</p>
-                </div>
-            </div>
-
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
-                <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
-                </div>
-                <div class="px-[10px] pt-[5px]">
-                    <div class="flex justify-between">
-                        <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
-                    </div>
-                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
-                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
-                    <p class="font-medium text-[16px]">L</p>
-                </div>
-            </div>
-
-            <div class="w-[250px] h-[365px] rounded-[10px] shadow-lg">
-                <div>
-                    <img src="./assets/img/foto-baju1.png" alt="">
-                </div>
-                <div class="px-[10px] pt-[5px]">
-                    <div class="flex justify-between">
-                        <h1 class="font-bold text-[16px]">Hoodie</h1>
-                        <img src="./assets/svg/icon-love.svg" alt="">
-                    </div>
-                    <p class="mt-1.5 font-medium text-[16px]">Rp 50.000</p>
-                    <p class="mt-1.5 font-medium text-[16px]">Japanese brand</p>
-                    <p class="font-medium text-[16px]">L</p>
-                </div>
-            </div>  
-        </div>
+        
         
        </section>
 
