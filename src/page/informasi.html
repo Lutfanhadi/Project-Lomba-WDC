@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../assets/svg/icon-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Comforter+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&family=Unlock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="font-nunito-sans w-full max-w-[1349px] mx-auto px-4 sm:px-6 md:px-8">
+    <!-- Navbar -->
+    <nav class="border-border border-b-2 sticky top-0 bg-white z-20 md:border-b-2 lg:py-[10px] lg:border-none">
+      <div
+        class="flex items-center mx-[20px] justify-between py-[18px] md:justify-between md:mx-[30px] md:py-[25px] lg:gap-[146px] lg:mx-[55px] lg:py-[18px]"
+      >
+        <div class="flex items-center gap-2.5">
+          <img
+            id="toggleMenu"
+            class="mr-[20px] md:w-[47px] md:h-[34px] md:mr-5 md:block lg:hidden"
+            src="./assets/svg/icon-menu.svg"
+            alt="icon menu"
+          />
+          <img
+            class="bg-primary rounded-full py-[5px] px-[5px] md:py-[3px] md:px-[3px] lg:py-[8px] lg:px-[8px]"
+            src="./assets/svg/icon-logo.svg"
+            alt="Logo Web ReLoved"
+          />
+          <h1 class="font-bold text-[20px] md:text-2xl lg:text-3xl">ReLoved</h1>
+        </div>
+        <div class="flex items-center gap-4 md:gap-[60px] lg:gap-[40px]">
+          <div class="relative flex items-center">
+            <input
+              class="bg-secondary rounded-[50px] font-semibold focus:outline-2 focus:outline-offset-2 focus:outline-primary hidden md:text-[14px] md:w-[336px] md:py-[12px] md:px-[15px] md:block lg:text-[20px] lg:w-[694px] lg:py-[17px] lg:px-[44px] lg:block"
+              type="text"
+              placeholder="Cari Fashion"
+            />
+            <div
+              class="absolute cursor-pointer bg-primary rounded-full md:py-[6px] md:px-[6px] md:top-[7px] md:right-3 lg:py-[8px] lg:px-[8px] lg:top-3 lg:right-4"
+            >
+              <img
+                class="md:h-[18px] lg:h-[23px]"
+                src="./assets/svg/icon-pecarian.svg"
+                alt="Icon Pecarian"
+              />
+            </div>
+          </div>            
+            <button id="searchButton" class="bg-primary rounded-full p-[7px] md:p-[6px] lg:p-[8px] md:hidden lg:hidden">
+                <img class="h-[14px] md:h-[18px] lg:h-[23px]" src="./assets/svg/icon-pecarian.svg" alt="Icon Pecarian" />
+              </button>
+
+              <div id="searchBox" class="fixed inset-0 border-b-2 border-border py-[14px] h-fit bg-white z-20 hidden">
+                <div class="flex items-center gap-[20px] justify-center">
+                  <div class="relative flex items-center justify-center">
+                    <input class="bg-secondary rounded-[50px] font-semibold focus:outline-2 focus:outline-offset-2 focus:outline-primary w-[300px] py-[8px] px-[24px] md:text-[14px] md:w-[336px] md:py-[12px] md:px-[15px] lg:text-[20px] lg:w-[694px] lg:py-[17px] lg:px-[44px]" type="text" placeholder="Cari Fashion" />
+                    <div class="absolute cursor-pointer bg-primary rounded-full right-[15px] p-[7px]">
+                      <img class="h-[14px]" src="./assets/svg/icon-pecarian.svg" alt="Icon Pecarian" />
+                    </div>
+                  </div>
+                  <svg id="closeButton" class="w-[30px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path>
+                  </svg>
+                </div>
+              </div>
+          <div>
+            <a
+              href="./page/login.html"
+              class="font-semibold bg-primary rounded-[10px] hover:bg-yellow-500 py-[5px] px-[23px] md:text-[18px] md:py-[7px] md:px-[40px] lg:text-[20px] lg:py-[15px] lg:px-[55px]"
+            >
+              Login
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[24px] hidden md:hidden lg:block lg:mx-[55px]">
+        <ul class="font-semibold text-[20px] flex items-center gap-[35px]">
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="group relative">
+            <div class="flex gap-2 items-center cursor-pointer">
+              <a
+                class="border-b-2 pb-0.5 border-transparent hover:text-primary hover:border-primary transition-colors"
+                href="kategori"
+                >Kategori</a
+              >
+              <svg class="w-[20px] h-[20px] text-gray-700">
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="absolute left-0 mt-2 w-[170px] bg-secondary p-3 rounded shadow-lg transition-all duration-300 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0"
+            >
+              <ul class="flex flex-col gap-[5px] text-[20px] font-semibold">
+                <li>
+                  <a class="hover:text-primary" href="../page/branded.html">Branded</a>
+                </li>
+                <li>
+                  <a class="hover:text-primary" href="../page/fashion-wanita.html"
+                    >Fashion Wanita</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-primary" href="../page/fashion-pria.html"
+                    >Fashion Pria</a
+                  >
+                </li>    
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="../page/artikel.html"
+              >Artikel</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="../page/rekomendasi.html"
+              >Rekomendasi</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="../page/tukar-fashion.html"
+              >Tukar Fashion</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="./page/sumbangkan-fashion.html"
+              >Sumbangkan Fashion</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary hover:border-b-2 hover:pb-0.5"
+              href="../page/informasi-page.html"
+              >Informasi</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="informasi-content justify-between px-4 sm:px-6">
+      <h1 class="text-2xl font-bold text-center mb-6 mt-10">
+          Pertanyaan yang Sering Ditanyakan
+      </h1>
+  
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-25 max-w-full mx-auto mt-10 mb-10">
+          <!-- Bagian Kiri (Accordion FAQ) -->
+          <div class="w-full max-w-[604px] bg-blue flex flex-col ml-55">
+              <div x-data="{ open: null }" class="w-full">
+                  <!-- FAQ Items -->
+                  <div class="mb-3 w-full">
+                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                          @click="open = (open === 1 ? null : 1)">
+                          <span class="text-left text-gray-600 font-medium text-sm">
+                              Apakah jika jual beli thrifting di sini aman?
+                          </span>
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                              :class="{ 'rotate-45': open === 1 }">+</span>
+                      </button>
+                      <div x-show="open === 1" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
+                          <p>Ya, jual beli thrifting di sini aman karena kami menyediakan sistem verifikasi untuk setiap penjual.</p>
+                      </div>
+                  </div>
+  
+                  <!-- FAQ 2 -->
+                  <div class="mb-3 w-full">
+                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                          @click="open = (open === 2 ? null : 2)">
+                          <span class="text-left text-gray-600 font-medium text-sm">
+                              Apakah saya dapat return uang saya jika barang tidak sesuai?
+                          </span>
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                              :class="{ 'rotate-45': open === 2 }">+</span>
+                      </button>
+                      <div x-show="open === 2" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
+                          <p>Ya, Anda dapat melakukan return uang jika barang tidak sesuai dengan deskripsi. Syarat dan ketentuan berlaku.</p>
+                      </div>
+                  </div>
+  
+                  <!-- FAQ 3 -->
+                  <div class="mb-3 w-full">
+                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                          @click="open = (open === 3 ? null : 3)">
+                          <span class="text-left text-gray-600 font-medium text-sm">
+                              Apakah tukar fashion pada website ini gratis?
+                          </span>
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                              :class="{ 'rotate-45': open === 3 }">+</span>
+                      </button>
+                      <div x-show="open === 3" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
+                          <p>Ya, Anda dapat menukar fashion secara gratis dengan sesama pengguna yang memiliki minat serupa.</p>
+                      </div>
+                  </div>
+  
+                  <!-- FAQ 4 -->
+                  <div class="mb-3 w-full">
+                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                          @click="open = (open === 4 ? null : 4)">
+                          <span class="text-left text-gray-600 font-medium text-sm">
+                              Barang yang saya sumbangkan akan diberikan kepada siapa?
+                          </span>
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                              :class="{ 'rotate-45': open === 4 }">+</span>
+                      </button>
+                      <div x-show="open === 4" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
+                          <p>Barang yang Anda sumbangkan akan diberikan kepada lembaga amal terpercaya dan komunitas yang membutuhkan.</p>
+                      </div>
+                  </div>
+  
+                  <!-- FAQ 5 -->
+                  <div class="mb-3 w-full">
+                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                          @click="open = (open === 5 ? null : 5)">
+                          <span class="text-left text-gray-600 font-medium text-sm">
+                              Dimana saya bisa membuat keluhan jual beli di sini?
+                          </span>
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                              :class="{ 'rotate-45': open === 5 }">+</span>
+                      </button>
+                      <div x-show="open === 5" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
+                          <p>Anda bisa membuat keluhan melalui fitur "Laporkan Masalah" yang tersedia di profil akun Anda.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Bagian Kanan (Form) -->
+          <div class="w-full max-w-[436px] flex flex-col items-center lg:text-left">
+              <img class="w-[150px] sm:w-[200px] lg:w-[250px] mb-4" src="../assets/svg/informasi-icon.svg" alt="Informasi Icon">
+              <h3 class="text-lg font-semibold mb-2 text-center lg:text-left">Apakah ada pertanyaan?</h3>
+              <p class="text-gray-700 text-sm mb-2 w-full lg:text-left">Beritahu aku</p>
+              <input type="text" 
+                  class="w-full h-[40px] px-4 py-2 border border-gray-200 rounded-lg shadow-sm focus:ring-2 focus:ring-yellow-400 focus:outline-none">
+              <button class="mt-4 w-[120px] bg-yellow-400 text-white font-bold py-2 rounded-full shadow-md shadow-amber-300 hover:bg-yellow-500 transition">
+                  Kirim
+              </button>
+          </div>
+      </div>
+  </main>
+</body>
+</html>

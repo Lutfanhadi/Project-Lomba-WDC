@@ -51,6 +51,8 @@
     --color-primary: #ffca1d;
     --color-secondary: #F5F5F5;
     --color-border: #D9D9D9;
+    --color-secondary: #F5F5F5;
+    --color-border: #D9D9D9;
   }
 }
 @layer base {
@@ -1197,6 +1199,36 @@
   }
   .text-\[30px\] {
     font-size: 30px;
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
