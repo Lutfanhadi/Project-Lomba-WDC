@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="../css/output.css">
-    <link rel="icon" href="../assets/svg/icon-logo.svg">
+    <link rel="icon" href="../assets/svg/reloved-logo.svg">
     <script src="../script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,82 +14,88 @@
 </head>
 <body class="font-nunito-sans w-[430px] md:w-[1020px] lg:w-[1349px] mx-auto">
     <!-- Main Content -->
-    <main class="register-page flex flex-col items-center py-10">
-        <!-- Reloved Logo -->
-        <img src="../assets/svg/reloved-logo.svg" class="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] md:w-[95px] md:h-[95px] mb-6 sm:mb-8 md:mb-10" alt="ReLoved Logo">
+   <main class="register-page flex flex-col items-center justify-center min-h-screen py-10">
+    <!-- Reloved Logo -->
+    <img src="../assets/svg/reloved-logo.svg" class="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] md:w-[95px] md:h-[95px] mb-6 sm:mb-8 md:mb-10" alt="ReLoved Logo">
 
-        <!-- Form Register -->
-        <div class="register-container flex justify-center w-full max-w-[800px] relative">
-            <!-- Background Ellipse -->
-            <img class="absolute bottom-[400px] left-[5px] md:bottom-[530px] md:left-[5px] lg:bottom-[500px] lg:left-[40px] w-[250px] md:w-[300px] z-0" src="../assets/svg/background-ellips.svg" alt="Background Ellips">
-            <img class="absolute top-[250px] left-[280px] md:top-[520px] md:left-[440px] w-[250px] md:w-[300px] lg:bottom-[515px] lg:left-[480px] z-0" src="../assets/svg/background-ellips.svg" alt="Background Ellips">
-        
-            <!-- Form Container -->
-            <div class="relative bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-10 w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] z-10">
-                <div class="mt-2 sm:mt-4">
-                    <div class="flex gap-2 text-xs sm:text-sm mb-3 sm:mb-4">
-                        <a href="../index.html" class="text-[#4737FF]">Home</a>
-                        <span>/</span>
-                        <a href="../page/register.html" class="text-gray-400 font-semibold">Sign-up</a>
-                    </div>
-                    <h2 class="text-lg sm:text-xl font-bold text-[#181E4B] mb-3 sm:mb-4">Sign-up</h2>
-        
-                    <!-- Form Register -->
-                    <form action="" method="get" class="w-full">
-                        <div class="mb-3 sm:mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="nama">Nama lengkap</label>
-                            <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" id="nama" type="text" placeholder="Nama Lengkap">
-                        </div>
-                        
-                        <div class="mb-3 sm:mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="email">Email</label>
-                            <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" id="email" type="email" placeholder="eg. nama@gmail.com">
-                        </div>
-                        
-                        <div class="mb-3 sm:mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="username">Username</label>
-                            <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" id="username" type="text" placeholder="eg. namaaku11">
-                        </div>
-                        
-                        <div class="mb-4 sm:mb-6">
-                            <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="password">Password</label>
-                            <div class="relative">
-                                <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" id="password" type="password" placeholder="eg. 4kuBu7uhM3dkit">
-                                <button type="button" id="togglePassword" class="absolute inset-y-0 right-3 flex items-center text-gray-400">
-                                    <i id="eyeIcon" class="fa-solid fa-eye-slash"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    
-                    <div class="flex justify-center mb-4 sm:mb-6 text-xs sm:text-sm">
-                        <span>Sudah punya akun? </span>
-                        <a class="underline underline-offset-4 ml-1" href="../page/login.html">Login</a>
-                    </div>
-        
-                    <!-- Button Pilihan Daftar -->
-                    <button class="flex justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow w-full h-10 sm:h-12 mb-3 sm:mb-4">
-                        <img src="../assets/svg/google-icon.svg" alt="Google Icon" class="w-4 sm:w-5">
-                        Continue with Google
-                    </button>
-                    <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded-full w-full h-10 sm:h-12 mb-2">
-                        Sign up
-                    </button>
-        
-                    <p class="text-xs sm:text-sm text-center text-gray-600">
-                        By joining you agree to the <a href="#" class="text-blue-500">Terms</a> and <a href="#" class="text-blue-500">Privacy Policy</a>
-                    </p>
+    <!-- Form Register -->
+    <div class="register-container flex justify-center items-center w-full max-w-[800px] px-4 sm:px-6 md:px-8 relative">
+        <!-- Background Ellipse -->
+        <img class="absolute bottom-[400px] left-[5px] sm:bottom-[450px] sm:left-[10px] md:bottom-[500px] md:left-[40px] w-[200px] sm:w-[250px] md:w-[300px] z-0" 
+            src="../assets/svg/background-ellips.svg" alt="Background Ellips">
+        <img class="absolute top-[200px] left-[250px] sm:top-[300px] sm:left-[350px] md:top-[400px] md:left-[450px] w-[200px] sm:w-[250px] md:w-[300px] z-0" 
+            src="../assets/svg/background-ellips.svg" alt="Background Ellips">
+
+        <!-- Form Container -->
+        <div class="relative bg-white rounded-2xl shadow-lg p-6 w-full max-w-[400px] z-10 flex flex-col items-center">
+            <div class="mt-2 sm:mt-4 w-full">
+                <div class="flex gap-2 text-xs sm:text-sm mb-3 sm:mb-4">
+                    <a href="../index.html" class="text-[#4737FF]">Home</a>
+                    <span>/</span>
+                    <a href="../page/register.html" class="text-gray-400 font-semibold">Sign-up</a>
                 </div>
+                <h2 class="text-lg sm:text-xl font-bold text-[#181E4B] mb-3 sm:mb-4 text-center">Sign-up</h2>
+                
+                <!-- Form Register -->
+                <form action="" method="get" class="w-full">
+                    <div class="mb-3 sm:mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="nama">Nama lengkap</label>
+                        <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" 
+                            id="nama" type="text" placeholder="Nama Lengkap">
+                    </div>
+                    
+                    <div class="mb-3 sm:mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="email">Email</label>
+                        <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" 
+                            id="email" type="email" placeholder="eg. nama@gmail.com">
+                    </div>
+                    
+                    <div class="mb-3 sm:mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="username">Username</label>
+                        <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" 
+                            id="username" type="text" placeholder="eg. namaaku11">
+                    </div>
+                    
+                    <div class="mb-4 sm:mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-1 sm:mb-2" for="password">Password</label>
+                        <div class="relative">
+                            <input class="w-full border border-gray-200 rounded py-2 px-3 text-gray-600 focus:border-[#4737FF] focus:ring focus:ring-[#4737FF] focus:outline-none" 
+                                id="password" type="password" placeholder="eg. 4kuBu7uhM3dkit">
+                            <button type="button" id="togglePassword" class="absolute inset-y-0 right-3 flex items-center text-gray-400">
+                                <i id="eyeIcon" class="fa-solid fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="flex justify-center mb-4 sm:mb-6 text-xs sm:text-sm">
+                    <span>Sudah punya akun? </span>
+                    <a class="underline underline-offset-4 ml-1" href="../page/login.html">Login</a>
+                </div>
+
+                <!-- Button Pilihan Daftar -->
+                <button class="flex justify-center gap-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-full shadow w-full h-10 sm:h-12 mb-3 sm:mb-4">
+                    <img src="../assets/svg/google-icon.svg" alt="Google Icon" class="w-4 sm:w-5">
+                    Continue with Google
+                </button>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded-full w-full h-10 sm:h-12 mb-2">
+                    Sign up
+                </button>
+
+                <p class="text-xs sm:text-sm text-center text-gray-600">
+                    By joining you agree to the <a href="#" class="text-blue-500">Terms</a> and <a href="#" class="text-blue-500">Privacy Policy</a>
+                </p>
             </div>
         </div>
-        
-        <!-- Tombol Kembali di Luar Register Container -->
-        <div class="flex justify-center mt-6">
-            <a href="../index.html" class="text-sm sm:text-base">
-                Kembali
-            </a>
-        </div>
-        
-    </main>
+    </div>
+    
+    <!-- Tombol Kembali di Luar Register Container -->
+    <div class="flex justify-center mt-6">
+        <a href="../index.html" class="text-sm sm:text-base">
+            Kembali
+        </a>
+    </div>
+</main>
+
 </body>
 </html>
