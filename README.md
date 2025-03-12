@@ -33,7 +33,7 @@ ReLoved adalah platform untuk menjual dan membeli barang preloved dengan berbaga
 **Clone Repository**
 
 ```sh
-git clone https://github.com/Lutfanhadi/Project-Lomba-WDC.git
+git clone https://github.com/Lutfanhadi/ReLoved.git
 ```
 
 ## Nama anggota team heroes
